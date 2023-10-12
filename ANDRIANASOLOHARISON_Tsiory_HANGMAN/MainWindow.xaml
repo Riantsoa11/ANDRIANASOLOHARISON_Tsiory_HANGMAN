@@ -1,0 +1,43 @@
+﻿<Window x:Class="ANDRIANASOLOHARISON_Tsiory_HANGMAN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ANDRIANASOLOHARISON_Tsiory_HANGMAN"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="850">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0" Name="Ensemble" Background="Aqua">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid Grid.Column="1" Name="gridKeyboard">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+            
+            
+        </Grid>
+        
+        <Grid Grid.Row="1" Name="Reponse" Background="Beige">
+            <Label Content="Reponse"></Label>
+        </Grid>
+    </Grid>
+</Window>

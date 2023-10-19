@@ -97,7 +97,9 @@
 
             </Grid>
             <Image HorizontalAlignment="Left" Height="257" Margin="20,19,0,0" VerticalAlignment="Top" Width="402"/>
-            
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="47,374,0,0" TextWrapping="Wrap" Text="Nombre de vie" FontSize="25" TextAlignment="center" VerticalAlignment="Top" Width="230" Background="Red"/>
+            <Button Content="Recommencer" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,429,0,0" VerticalAlignment="Top" Width="358"/>
+            <TextBox HorizontalAlignment="Left" Height="49" Margin="319,375,0,0" TextWrapping="Wrap" Text="4" TextAlignment="Center" FontSize="35" VerticalAlignment="Top" Width="85"/>
 
         </Grid>
 

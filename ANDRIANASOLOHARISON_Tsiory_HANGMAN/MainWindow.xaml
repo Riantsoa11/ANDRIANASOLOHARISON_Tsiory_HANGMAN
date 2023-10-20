@@ -62,50 +62,50 @@
 
                 </Grid.Resources>
 
-                <Button Grid.Row="0" Grid.Column="0" Name ="A" Content="A" Click="A_Click" ></Button>
-                <Button Grid.Row="0" Grid.Column="1" Name ="B" Content="B" Click="B_Click" ></Button>
-                <Button Grid.Row="0" Grid.Column="2" Name ="C" Content="C" Click="C_Click" ></Button>
-                <Button Grid.Row="0" Grid.Column="3" Name ="D" Content="D" Click="D_Click" ></Button>
+                <Button Grid.Row="0" Grid.Column="0" Name ="A" Content="A" Click="Word_Click" ></Button>
+                <Button Grid.Row="0" Grid.Column="1" Name ="B" Content="B" Click="Word_Click" ></Button>
+                <Button Grid.Row="0" Grid.Column="2" Name ="C" Content="C" Click="Word_Click" ></Button>
+                <Button Grid.Row="0" Grid.Column="3" Name ="D" Content="D" Click="Word_Click" ></Button>
 
-                <Button Grid.Row="1" Grid.Column="0" Name ="E" Content="E" Click="E_Click" ></Button>
-                <Button Grid.Row="1" Grid.Column="1" Name ="F" Content="F" Click="F_Click" ></Button>
-                <Button Grid.Row="1" Grid.Column="2" Name ="G" Content="G" Click="G_Click" ></Button>
-                <Button Grid.Row="1" Grid.Column="3" Name ="H" Content="H" Click="H_Click" ></Button>
+                <Button Grid.Row="1" Grid.Column="0" Name ="E" Content="E" Click="Word_Click"></Button>
+                <Button Grid.Row="1" Grid.Column="1" Name ="F" Content="F" Click="Word_Click"></Button>
+                <Button Grid.Row="1" Grid.Column="2" Name ="G" Content="G" Click="Word_Click" ></Button>
+                <Button Grid.Row="1" Grid.Column="3" Name ="H" Content="H" Click="Word_Click" ></Button>
 
-                <Button Grid.Row="2" Grid.Column="0" Name="I" Content="I" Click="I_Click" ></Button>
-                <Button Grid.Row="2" Grid.Column="1" Name="J" Content="J" Click="J_Click" ></Button>
-                <Button Grid.Row="2" Grid.Column="2" Name="K" Content="K" Click="K_Click" ></Button>
-                <Button Grid.Row="2" Grid.Column="3" Name="L" Content="L" Click="L_Click" ></Button>
+                <Button Grid.Row="2" Grid.Column="0" Name="I" Content="I" Click="Word_Click" ></Button>
+                <Button Grid.Row="2" Grid.Column="1" Name="J" Content="J" Click="Word_Click"></Button>
+                <Button Grid.Row="2" Grid.Column="2" Name="K" Content="K" Click="Word_Click" ></Button>
+                <Button Grid.Row="2" Grid.Column="3" Name="L" Content="L" Click="Word_Click" ></Button>
 
-                <Button Grid.Row="3" Grid.Column="0" Name="M" Content="M" Click="M_Click" ></Button>
-                <Button Grid.Row="3" Grid.Column="1" Name="N" Content="N" Click="N_Click" ></Button>
-                <Button Grid.Row="3" Grid.Column="2" Name="O" Content="O" Click="O_Click" ></Button>
-                <Button Grid.Row="3" Grid.Column="3" Name="P" Content="P" Click="P_Click" ></Button>
+                <Button Grid.Row="3" Grid.Column="0" Name="M" Content="M" Click="Word_Click" ></Button>
+                <Button Grid.Row="3" Grid.Column="1" Name="N" Content="N" Click="Word_Click"></Button>
+                <Button Grid.Row="3" Grid.Column="2" Name="O" Content="O" Click="Word_Click" ></Button>
+                <Button Grid.Row="3" Grid.Column="3" Name="P" Content="P" Click="Word_Click" ></Button>
 
-                <Button Grid.Row="4" Grid.Column="0" Name="Q" Content="Q" Click="Q_Click" ></Button>
-                <Button Grid.Row="4" Grid.Column="1" Name="R" Content="R" Click="R_Click" ></Button>
-                <Button Grid.Row="4" Grid.Column="2" Name="S" Content="S" Click="S_Click" ></Button>
-                <Button Grid.Row="4" Grid.Column="3" Name="T" Content="T" Click="T_Click" ></Button>
+                <Button Grid.Row="4" Grid.Column="0" Name="Q" Content="Q" Click="Word_Click" ></Button>
+                <Button Grid.Row="4" Grid.Column="1" Name="R" Content="R" Click="Word_Click" ></Button>
+                <Button Grid.Row="4" Grid.Column="2" Name="S" Content="S" Click="Word_Click"></Button>
+                <Button Grid.Row="4" Grid.Column="3" Name="T" Content="T" Click="Word_Click" ></Button>
 
-                <Button Grid.Row="5" Grid.Column="0" Name="U" Content="U" Click="U_Click" ></Button>
-                <Button Grid.Row="5" Grid.Column="1" Name="V" Content="V" Click="V_Click" ></Button>
-                <Button Grid.Row="5" Grid.Column="2" Name="W" Content="W" Click="W_Click" ></Button>
-                <Button Grid.Row="5" Grid.Column="3" Name="X" Content="X" Click="X_Click"></Button>
+                <Button Grid.Row="5" Grid.Column="0" Name="U" Content="U" Click="Word_Click"></Button>
+                <Button Grid.Row="5" Grid.Column="1" Name="V" Content="V" Click="Word_Click"></Button>
+                <Button Grid.Row="5" Grid.Column="2" Name="W" Content="W" Click="Word_Click"></Button>
+                <Button Grid.Row="5" Grid.Column="3" Name="X" Content="X" Click="Word_Click"></Button>
 
-                <Button Grid.Row="6" Grid.Column="1" Name="Y" Content="Y" Click="Y_Click" ></Button>
-                <Button Grid.Row="6" Grid.Column="2" Name="Z" Content="Z" Click="Z_Click"></Button>
+                <Button Grid.Row="6" Grid.Column="1" Name="Y" Content="Y" Click="Word_Click"></Button>
+                <Button Grid.Row="6" Grid.Column="2" Name="Z" Content="Z" Click="Word_Click"></Button>
 
             </Grid>
             <Image HorizontalAlignment="Left" Height="257" Margin="20,19,0,0" VerticalAlignment="Top" Width="402"/>
             <TextBox HorizontalAlignment="Left" Height="40" Margin="47,374,0,0" TextWrapping="Wrap" Text="Nombre de vie" FontSize="25" TextAlignment="center" VerticalAlignment="Top" Width="230" Background="Red"/>
-            <Button Content="Recommencer" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,429,0,0" VerticalAlignment="Top" Width="358"/>
-            <TextBox HorizontalAlignment="Left" Height="49" Margin="319,375,0,0" TextWrapping="Wrap" Text="4" TextAlignment="Center" FontSize="35" VerticalAlignment="Top" Width="85"/>
+            <Button x:Name="TB_Recommencer" Content="Recommencer" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,429,0,0" VerticalAlignment="Top" Width="358"/>
+            <TextBox x:Name="TB_vie" HorizontalAlignment="Left" Height="49" Margin="319,375,0,0" TextWrapping="Wrap" Text="4" TextAlignment="Center" FontSize="35" VerticalAlignment="Top" Width="85"/>
 
         </Grid>
 
         <Grid Grid.Row="1" Name="Reponse" Background="Azure" Margin="0,15,0,0">
             <Grid HorizontalAlignment="Left" Height="42" Margin="106,24,0,0" VerticalAlignment="Top" Width="616"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="58" Margin="280,16,0,0" VerticalAlignment="Top" Width="600"/>
+            <TextBox x:Name="TB_Reponse" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="58" Margin="280,16,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
 
     </Grid>

@@ -13,7 +13,9 @@
             <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Name="Ensemble" Background="Azure" Margin="0,10,0,90" Grid.RowSpan="2">
+
+
+        <Grid Grid.Row="0" Name="Ensemble" Background="Azure" Margin="0,10,0,0" Grid.RowSpan="2" Height="484" VerticalAlignment="Top">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
@@ -26,7 +28,7 @@
                     <RowDefinition Height="50"></RowDefinition>
                     <RowDefinition Height="50"></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBlock Background="Orange" TextAlignment="Center" Padding="10" HorizontalAlignment="Center" Height="48" TextWrapping="Wrap" Text="HANGMAN GAME" VerticalAlignment="Top" Width="358" FontSize="22" FontFamily="Times New Roman" Margin="0,314,0,0"/>
+                <TextBlock Background="Orange" TextAlignment="Center" Padding="10" HorizontalAlignment="Center" Height="48" TextWrapping="Wrap" Text="HANGMAN GAME" VerticalAlignment="Top" Width="358" FontSize="22" FontFamily="Times New Roman" Margin="0,2,0,0"/>
 
             </Grid>
 
@@ -96,16 +98,17 @@
                 <Button Grid.Row="6" Grid.Column="2" Name="Z" Content="Z" Click="Word_Click"></Button>
 
             </Grid>
-            <Image HorizontalAlignment="Left" Height="257" Margin="20,19,0,0" VerticalAlignment="Top" Width="402"/>
-            <TextBox HorizontalAlignment="Left" Height="40" Margin="47,374,0,0" TextWrapping="Wrap" Text="Nombre de vie" FontSize="25" TextAlignment="center" VerticalAlignment="Top" Width="230" Background="Red"/>
-            <Button x:Name="TB_Recommencer" Content="Recommencer" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,429,0,0" VerticalAlignment="Top" Width="358"/>
-            <TextBox x:Name="TB_vie" HorizontalAlignment="Left" Height="49" Margin="319,375,0,0" TextWrapping="Wrap" Text="4" TextAlignment="Center" FontSize="35" VerticalAlignment="Top" Width="85"/>
-
+            <Image x:Name="monImage" HorizontalAlignment="Left" Height="257" Margin="159,69,0,0" VerticalAlignment="Top" Width="119"/>
+            <TextBox x:Name="TB_NB_Vie" HorizontalAlignment="Left" Height="40" Margin="46,358,0,0" TextWrapping="Wrap" Text="Nombre de vie" FontSize="25" TextAlignment="center" VerticalAlignment="Top" Width="268" Background="Orange"/>
+            <TextBox x:Name="TB_vie" HorizontalAlignment="Left" Height="40" Margin="319,358,0,0" TextAlignment="Center" FontSize="25" VerticalAlignment="Top" Width="85"/>
+            <Button x:Name="TB_Commencer" Content="Commencer" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,410,0,0" VerticalAlignment="Top" Width="358" Click="Commencer_Click"></Button>
+            <Button x:Name="TB_Indice" Content="Indice" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,308,0,0" VerticalAlignment="Top" Width="358" Click="TB_Indice_Click"/>
         </Grid>
 
         <Grid Grid.Row="1" Name="Reponse" Background="Azure" Margin="0,15,0,0">
-            <Grid HorizontalAlignment="Left" Height="42" Margin="106,24,0,0" VerticalAlignment="Top" Width="616"/>
-            <TextBox x:Name="TB_Reponse" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="58" Margin="280,16,0,0" VerticalAlignment="Top" Width="600"/>
+
+            <TextBox x:Name="TB_Reponse" TextAlignment="Center" FontSize="25" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="58" Margin="280,16,0,0" VerticalAlignment="Top" Width="600"/>
+            <Button x:Name="TB_Terminer" Content="Afficher le mot" HorizontalAlignment="Left" FontSize="25" Height="58" Margin="42,16,0,0" VerticalAlignment="Top" Width="211" Background="Yellow" Click="TB_Terminer_Click"/>
         </Grid>
 
     </Grid>

@@ -108,7 +108,7 @@
         <Grid Grid.Row="1" Name="Reponse" Background="Azure" Margin="0,15,0,0">
 
             <TextBox x:Name="TB_Reponse" TextAlignment="Center" FontSize="25" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="58" Margin="280,16,0,0" VerticalAlignment="Top" Width="600"/>
-            <Button x:Name="TB_Terminer" Content="Afficher le mot" HorizontalAlignment="Left" FontSize="25" Height="58" Margin="42,16,0,0" VerticalAlignment="Top" Width="211" Background="Yellow" Click="TB_Terminer_Click"/>
+            <Button x:Name="Btn_Terminer" Content="Afficher le mot" HorizontalAlignment="Left" FontSize="25" Height="58" Margin="42,16,0" VerticalAlignment="Top" Width="211" Background="Yellow" Click="Btn_Terminer_Click"/>
         </Grid>
 
     </Grid>

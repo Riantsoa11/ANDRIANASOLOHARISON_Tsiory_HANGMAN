@@ -28,11 +28,13 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             "souris"
         };
 
+        // Tableau de caractères représentant le mot en cours
         private char[] motCourant; // Mot affiché
         private int viesRestantes; // Nombre de vies restantes
         private string motCache;
         private int imageVie;
 
+        // Constructeur de la fenêtre principale
         public MainWindow()
         {
             InitializeComponent();
@@ -41,23 +43,26 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             BoutonStatut(false);
         }
 
+        // Affiche le mot en cours dans l'interface utilisateur
         private void AfficherMotCourant()
         {
             TB_Reponse.Text = new string(motCourant);
         }
 
+        // Affiche l'image correspondante au nombre de vies restantes
         private void AfficherImage(int imageVie)
         {
             BitmapImage image = new BitmapImage(new Uri("Images/" + imageVie + ".png", UriKind.Relative));
             monImage.Source = image;
         }
 
+        // Met à jour l'affichage du nombre de vies restantes
         private void ActualiserVies()
         {
             TB_vie.Text = viesRestantes.ToString();
         }
 
-
+        // Gère le clic sur une lettre du clavier
         private void Word_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
@@ -66,6 +71,7 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             btn.IsEnabled = false;
         }
 
+        // Initialise les valeurs lors du démarrage du jeu
         private void InitialiserValeur()
         {
             viesRestantes = 6; // Nombre de vies restantes
@@ -74,7 +80,7 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             monImage.Source = null;
 
 
-            // choisir le mot
+            // choisir le mot aleatoirement
             Random random = new Random();
             int aleatoire = random.Next(0, listMotATrouver.Count);
             motCache = listMotATrouver[aleatoire];
@@ -82,6 +88,7 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             ActualiserVies();
         }
 
+        // Active ou désactive les boutons du clavier
         private void BoutonStatut(bool estActif)
         {
             A.IsEnabled = estActif;
@@ -110,10 +117,11 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             X.IsEnabled = estActif;
             Y.IsEnabled = estActif;
             Z.IsEnabled = estActif;
-            TB_Terminer.IsEnabled = estActif;
+            Btn_Terminer.IsEnabled = estActif;
             TB_Indice.IsEnabled = estActif;
         }
 
+        // Initialise le jeu et démarre une nouvelle partie
         private void Commencer_Click(object sender, RoutedEventArgs e)
         {
             InitialiserValeur();
@@ -142,6 +150,7 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
 
         }
 
+        // Vérifie si la lettre choisie par le joueur est présente dans le mot à deviner
         private void CheckLettre(char lettre) 
         {
             bool lettretrouvee = false;
@@ -181,7 +190,8 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             }
         }
 
-        private void TB_Terminer_Click(object sender, RoutedEventArgs e)
+        // Révèle toutes les lettres du mot à deviner
+        private void Btn_Terminer_Click(object sender, RoutedEventArgs e)
         {
             foreach (var item in motCache.ToUpper())
             {
@@ -190,6 +200,7 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             BoutonStatut(false);
         }
 
+        // Donne un indice en révélant une lettre du mot à deviner
         private void TB_Indice_Click(object sender, RoutedEventArgs e)
         {
             string motActu = new string(motCourant);

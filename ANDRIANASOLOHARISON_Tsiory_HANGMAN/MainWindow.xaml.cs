@@ -118,11 +118,11 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             Y.IsEnabled = estActif;
             Z.IsEnabled = estActif;
             Btn_Terminer.IsEnabled = estActif;
-            TB_Indice.IsEnabled = estActif;
+            Btn_Indice.IsEnabled = estActif;
         }
 
         // Initialise le jeu et démarre une nouvelle partie
-        private void Commencer_Click(object sender, RoutedEventArgs e)
+        private void Btn_Commencer_Click(object sender, RoutedEventArgs e)
         {
             InitialiserValeur();
 
@@ -178,14 +178,14 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             if (new string(motCourant).Replace(" ","") == motCache.ToUpper())
             {
                 MessageBox.Show("Jeu terminé !");
-                TB_Commencer.IsEnabled = true;
+                Btn_Commencer.IsEnabled = true;
                 BoutonStatut(false);
             }
 
             if (viesRestantes == 0)
             {
                 MessageBox.Show("Vous avez perdu. Le mot était : " + motCache);
-                TB_Commencer.IsEnabled = true;
+                Btn_Commencer.IsEnabled = true;
                 BoutonStatut(false);
             }
         }
@@ -201,7 +201,7 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
         }
 
         // Donne un indice en révélant une lettre du mot à deviner
-        private void TB_Indice_Click(object sender, RoutedEventArgs e)
+        private void Btn_Indice_Click(object sender, RoutedEventArgs e)
         {
             string motActu = new string(motCourant);
             motActu.Replace(" ", "");
@@ -223,7 +223,7 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
             CheckLettre(lettre);
             Button boutonCible = FindName(lettre.ToString()) as Button;
             boutonCible.IsEnabled = false;
-            TB_Indice.IsEnabled = false;
+            Btn_Indice.IsEnabled = false;
         }
     }
 }

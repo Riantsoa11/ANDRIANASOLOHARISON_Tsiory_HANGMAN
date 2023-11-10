@@ -101,14 +101,14 @@
             <Image x:Name="monImage" HorizontalAlignment="Left" Height="257" Margin="159,69,0,0" VerticalAlignment="Top" Width="119"/>
             <TextBox x:Name="TB_NB_Vie" HorizontalAlignment="Left" Height="40" Margin="46,358,0,0" TextWrapping="Wrap" Text="Nombre de vie" FontSize="25" TextAlignment="center" VerticalAlignment="Top" Width="268" Background="Orange"/>
             <TextBox x:Name="TB_vie" HorizontalAlignment="Left" Height="40" Margin="319,358,0,0" TextAlignment="Center" FontSize="25" VerticalAlignment="Top" Width="85"/>
-            <Button x:Name="TB_Commencer" Content="Commencer" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,410,0,0" VerticalAlignment="Top" Width="358" Click="Commencer_Click"></Button>
-            <Button x:Name="TB_Indice" Content="Indice" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,308,0,0" VerticalAlignment="Top" Width="358" Click="TB_Indice_Click"/>
+            <Button x:Name="Btn_Commencer" Content="Commencer" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,410,0,0" VerticalAlignment="Top" Width="358" Click="Btn_Commencer_Click"></Button>
+            <Button x:Name="Btn_Indice" Content="Indice" FontSize="25" HorizontalAlignment="Center" Height="45" Margin="0,308,0,0" VerticalAlignment="Top" Width="358" Click="Btn_Indice_Click"/>
         </Grid>
 
         <Grid Grid.Row="1" Name="Reponse" Background="Azure" Margin="0,15,0,0">
 
             <TextBox x:Name="TB_Reponse" TextAlignment="Center" FontSize="25" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="58" Margin="280,16,0,0" VerticalAlignment="Top" Width="600"/>
-            <Button x:Name="Btn_Terminer" Content="Afficher le mot" HorizontalAlignment="Left" FontSize="25" Height="58" Margin="42,16,0" VerticalAlignment="Top" Width="211" Background="Yellow" Click="Btn_Terminer_Click"/>
+            <Button x:Name="Btn_Terminer" Content="Afficher le mot" HorizontalAlignment="Left" FontSize="25" Height="58" Margin="37,16,0,0" VerticalAlignment="Top" Width="211" Background="Yellow" Click="Btn_Terminer_Click"/>
         </Grid>
 
     </Grid>

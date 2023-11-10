@@ -38,6 +38,7 @@ namespace ANDRIANASOLOHARISON_Tsiory_HANGMAN
         public MainWindow()
         {
             InitializeComponent();
+
             BitmapImage image = new BitmapImage(new Uri("Images/7.png", UriKind.Relative));
             monImage.Source = image;
             BoutonStatut(false);
